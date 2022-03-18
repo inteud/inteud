@@ -1,6 +1,4 @@
 - name: README Repos List
-  uses: pabio/readme-repos-list@v1.1.1
-name: README Repos List
 on:
   schedule:
     - cron: "0 0 * * 1"
