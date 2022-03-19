@@ -1,12 +1,11 @@
 - name: Get Repo List
-  id: repo
   uses: yi-Xu-0100/repo-list-generator@v1.0.1
-      with:
-          my_token: ${{ secrets.GITHUB_TOKEN }}
-          user: ${{ github.repository }}
-          max_page: 10
-          block_list:
-          allow_empty: false
+  with:
+    my_token: ${{ secrets.GITHUB_TOKEN }}
+    user: ${{ github.repository }}
+    max_page: 10
+    block_list:
+    allow_empty: false
 
 - name: Echo Output
   run: |
